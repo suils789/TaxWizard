@@ -4,7 +4,7 @@
 #本 文件用于集中管理项目中使用到的常量和字段映射，包括 API 密钥、默认文件路径、以及 Form 8843 字段和 PDF 表单域的映射关系。
 
 # OpenAI API Key，用于调用 GPT-4o 提取 W-2 表单字段，可替换
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = ""
 
 # 默认路径设置（PDF 路径、输出路径、JSON 存储等）默认路径设置（PDF 路径、输出路径、JSON 存储等）
 DEFAULT_W2_PDF_PATH = "W2_sample.pdf"
