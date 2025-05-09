@@ -1,0 +1,10 @@
+## 需要的库
+
+openai
+ipywidgets
+pandas
+pdf2image
+PyMuPDF
+pdfrw
+Pillow
+ipython  # 为了兼容 display() 相关
