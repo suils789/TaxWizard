@@ -1,18 +1,20 @@
 # =========================
 # 📜 Constants and Settings
 # =========================
+#本 文件用于集中管理项目中使用到的常量和字段映射，包括 API 密钥、默认文件路径、以及 Form 8843 字段和 PDF 表单域的映射关系。
 
-# OpenAI API Key
-OPENAI_API_KEY = "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"
+# OpenAI API Key，用于调用 GPT-4o 提取 W-2 表单字段，可替换
+OPENAI_API_KEY = ""
 
-# Default File Paths (You can modify later)
-DEFAULT_W2_PDF_PATH = "/Users/hhannn/Desktop/W2_sample.pdf"
-DEFAULT_8843_TEMPLATE_PATH = "/Users/hhannn/Desktop/f8843_blank.pdf"
-DEFAULT_OUTPUT_PDF_PATH = "/Users/hhannn/Desktop/filled_8843.pdf"
-DEFAULT_FLATTENED_PDF_PATH = "/Users/hhannn/Desktop/filled_8843_flat.pdf"
-DEFAULT_W2_DATA_JSON = "/Users/hhannn/Desktop/w2_data.json"
+# 默认路径设置（PDF 路径、输出路径、JSON 存储等）默认路径设置（PDF 路径、输出路径、JSON 存储等）
+DEFAULT_W2_PDF_PATH = "W2_sample.pdf"
+DEFAULT_8843_TEMPLATE_PATH = "f8843_blank.pdf"
+DEFAULT_OUTPUT_PDF_PATH = "filled_8843.pdf"
+DEFAULT_FLATTENED_PDF_PATH = "filled_8843_flat.pdf"
+DEFAULT_W2_DATA_JSON = "w2_data.json"
 
-# 8843 Form Fields Mapping
+# 8843 表单逻辑字段（例如 first_name）到 PDF 表单字段名（如 f1_4[0]）的映射关系
+# 用于自动填写 PDF 表单
 form_8843_fields_map = {
     # Header Info
     "beginning date": "f1_1[0]",
